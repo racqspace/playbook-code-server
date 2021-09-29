@@ -1,0 +1,9 @@
+---
+- name: code-server
+  hosts: all
+  become: true
+  tags:
+    - code-server
+  roles:
+    - role: racqspace.code_server
+...
