@@ -23,21 +23,6 @@ jobs:
       - name: Lint Code Base with ansible-lint
         run: ansible-lint
 
-  pre-commit:
-    name: pre-commit
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Set up Python 3
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Run pre-commit
-        uses: pre-commit/action@v2.0.3
-
   super-linter:
     name: Github Linter
     runs-on: ubuntu-latest
@@ -86,7 +71,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Install Ansible Dependencies
-        run: ansible-galaxy role install -f roles/requirements.yml
+        run: ansible-galaxy role install -r roles/requirements.yml
 
       - name: Run Playbook
         run: ansible-playbook -i hosts playbook.yml
@@ -100,7 +85,6 @@ jobs:
     if: ${{ failure() }}
     needs:
       - ansible-linter
-      - pre-commit
       - super-linter
       - yaml-linter
       - test
