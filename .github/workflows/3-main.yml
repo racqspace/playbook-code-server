@@ -92,7 +92,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Install Ansible Dependencies
-        run: ansible-galaxy role install -f roles/requirements.txt
+        run: ansible-galaxy role install -f roles/requirements.yml
 
       - name: Run Playbook
         run: ansible-playbook -i hosts playbook.yml
