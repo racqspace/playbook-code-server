@@ -1,5 +1,5 @@
 ---
-- name: code-server
+- name: Install Code Server
   hosts: all
   tags:
     - code-server

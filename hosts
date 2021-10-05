@@ -1,1 +1,1 @@
-my-code-server
+localhost ansible_connection=local
