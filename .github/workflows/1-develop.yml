@@ -23,6 +23,9 @@ jobs:
       - name: Install ansible-lint Dependencies
         run: pip3 install ansible ansible-base ansible-lint
 
+      - name: Install ansible Dependencies
+        run: ansible-galaxy role install -r roles/requirements.yml
+
       - name: Lint Code Base with ansible-lint
         run: ansible-lint
 
@@ -73,7 +76,7 @@ jobs:
       - name: Install Molecule Dependencies
         run: pip3 install -r requirements.txt
 
-      - name: Install Ansible Dependencies
+      - name: Install ansible Dependencies
         run: ansible-galaxy role install -r roles/requirements.yml
 
       - name: Run Playbook
