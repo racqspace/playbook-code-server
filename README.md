@@ -3,7 +3,6 @@
 ![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/racqspace/playbook-code-server/Main?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/racqspace/playbook-code-server?style=flat-square)
-![GitHub Release Date](https://img.shields.io/github/release-date/racqspace/playbook-code-server?style=flat-square)
 ![Maintenance](https://img.shields.io/maintenance/yes/2022?style=flat-square)
 
 Install and setup [code-server](https://github.com/cdr/code-server).
