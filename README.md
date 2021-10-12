@@ -1,4 +1,4 @@
-# Ansible Playbook: awx
+# Ansible Playbook: code-server
 
 ![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/racqspace/playbook-code-server/Main?style=flat-square)
